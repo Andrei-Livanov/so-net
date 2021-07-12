@@ -1,7 +1,7 @@
 <template>
     <v-app>
         <v-app-bar app>
-            <v-toolbar-title>Simple Sociall Network</v-toolbar-title>
+            <v-toolbar-title>Simple Social Network</v-toolbar-title>
             <v-btn
                     text
                     v-if="profile"
