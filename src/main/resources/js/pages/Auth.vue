@@ -1,13 +1,13 @@
 <template>
-    <v-container>Please, authorize with
-        <a href="/login">Google</a>
-    </v-container>
+  <v-container>Пожалуйста, авторизуйтесь через
+    <a href="/login">Google</a>
+  </v-container>
 </template>
 
 <script>
-    export default {
-        name: 'Auth',
-    }
+export default {
+  name: 'Auth',
+}
 </script>
 
 <style scoped>

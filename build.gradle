@@ -5,7 +5,7 @@ plugins {
 	id "com.github.node-gradle.node" version "2.2.0"
 }
 
-group = 'example'
+group = 'com.example'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
 

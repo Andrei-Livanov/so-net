@@ -46,7 +46,6 @@ export default new Vuex.Store({
             const message = state.messages[updateIndex];
 
             if (!message.comments) {
-                // message.comments === null here
                 message.comments = [];
             }
 
@@ -83,7 +82,7 @@ export default new Vuex.Store({
         }
     },
     actions: {
-        async addMessageAction({ commit, state }, message) {
+        async addMessageAction({commit, state}, message) {
             const response = await messagesApi.add(message);
             const data = await response.json();
             const index = state.messages.findIndex(item => item.id === data.id);
@@ -94,26 +93,26 @@ export default new Vuex.Store({
                 commit('addMessageMutation', data);
             }
         },
-        async updateMessageAction({ commit }, message) {
+        async updateMessageAction({commit}, message) {
             const response = await messagesApi.update(message);
             const data = await response.json();
 
             commit('updateMessageMutation', data);
         },
-        async removeMessageAction({ commit }, message) {
-             const response = await messagesApi.remove(message.id);
+        async removeMessageAction({commit}, message) {
+            const response = await messagesApi.remove(message.id);
 
-             if (response.ok) {
+            if (response.ok) {
                 commit('removeMessageMutation', message);
-             }
+            }
         },
-        async addCommentAction({ commit, state }, comment) {
+        async addCommentAction({commit, state}, comment) {
             const response = await commentApi.add(comment);
             const data = await response.json();
 
             commit('addCommentMutation', data);
         },
-        async loadPageAction({ commit, state }) {
+        async loadPageAction({commit, state}) {
             const response = await messagesApi.page(state.currentPage + 1);
             const data = await response.json();
 
