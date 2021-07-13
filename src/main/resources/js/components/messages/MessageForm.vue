@@ -2,11 +2,11 @@
   <v-layout>
     <v-text-field
         label="New message"
-        placeholder="Write something"
+        placeholder="Написать сообщение"
         v-model="text"
         @keyup.enter="save"
     />
-    <v-btn @click="save">
+    <v-btn @click="save" title="Сохранить">
       Save
     </v-btn>
   </v-layout>

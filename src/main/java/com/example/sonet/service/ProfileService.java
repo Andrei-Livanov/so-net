@@ -21,7 +21,7 @@ public class ProfileService {
         this.userSubscriptionRepo = userSubscriptionRepo;
     }
 
-    public User changeSubscription(User channel, User subscriber) {
+    public User changeSubscription(User subscriber, User channel) {
         List<UserSubscription> subscriptions = channel.getSubscribers()
                 .stream()
                 .filter(subscription ->

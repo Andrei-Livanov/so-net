@@ -11,8 +11,8 @@
     </v-card-text>
     <media v-if="message.link" :message="message"></media>
     <v-card-actions>
-      <v-btn small text rounded value="Edit" :disabled="!isAuthor" @click="edit">Edit</v-btn>
-      <v-btn small icon value="X" :disabled="!isAuthor" @click="del">
+      <v-btn small text rounded value="Edit" :disabled="!isAuthor" @click="edit" title="Редактировать">Edit</v-btn>
+      <v-btn small icon value="X" :disabled="!isAuthor" @click="del" title="Удалить">
         <v-icon>{{ deleteIcon }}</v-icon>
       </v-btn>
     </v-card-actions>

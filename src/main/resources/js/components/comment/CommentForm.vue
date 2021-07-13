@@ -2,11 +2,11 @@
   <v-layout class="px-3">
     <v-text-field
         label="Add comment"
-        placeholder="Write something"
+        placeholder="Написать комментарий"
         v-model="text"
         @keyup.enter="save"
     />
-    <v-btn @click="save">
+    <v-btn @click="save" title="Добавить">
       Add
     </v-btn>
   </v-layout>

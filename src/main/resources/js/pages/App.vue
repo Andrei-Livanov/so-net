@@ -6,7 +6,7 @@
           text
           v-if="profile"
           :disabled="$route.path === '/'"
-          @click="showMessages"
+          @click="showMessages" title="Список сообщений"
       >
         Messages
       </v-btn>
@@ -15,11 +15,11 @@
           text
           v-if="profile"
           :disabled="$route.path === '/user'"
-          @click="showProfile"
+          @click="showProfile" title="Профиль пользователя"
       >
         {{ profile.name }}
       </v-btn>
-      <v-btn v-if="profile" icon href="/logout">
+      <v-btn v-if="profile" icon href="/logout" title="Выйти">
         <v-icon>{{ exitToAppIcon }}</v-icon>
       </v-btn>
     </v-app-bar>
