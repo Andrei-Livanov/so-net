@@ -26,7 +26,7 @@ public class User implements Serializable {
     private String name;
 
     @JsonView(Views.IdName.class)
-    private String userPicture;
+    private String userpic;
     private String email;
 
     @JsonView(Views.FullProfile.class)

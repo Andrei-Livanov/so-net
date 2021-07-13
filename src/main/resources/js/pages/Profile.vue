@@ -7,7 +7,7 @@
         </div>
         <v-layout row justify-space-between>
           <v-flex class="px-1">
-            <v-img :src="profile.userPicture"></v-img>
+            <v-img :src="profile.userpic"></v-img>
           </v-flex>
           <v-flex class="px-1">
             <v-layout column>
