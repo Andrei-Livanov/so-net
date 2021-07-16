@@ -4,11 +4,11 @@
       class="px-3"
   >
     <v-avatar
-        v-if="user && user.userPicture"
+        v-if="user && user.userpic"
         :size="`${size || 36}px`"
     >
       <img
-          :src="user.userPicture"
+          :src="user.userpic"
           :alt="user.name"
       >
     </v-avatar>
